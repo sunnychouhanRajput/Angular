@@ -1,0 +1,40 @@
+
+<div>
+  <h3 class="mb-3">Create observable from a string, array , events & object</h3>
+  <p-accordion (onOpen)="onTabChange($event)">
+
+    <p-accordionTab header="By Create Method">
+      <h5>Code : </h5>
+      <pre class="code"><code>{{creatCode}}</code></pre>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="byCreateMethod()">Show Output</button>
+      <item-list [items]="obsResponse" [listHeader]="createListHeader"></item-list>
+    </p-accordionTab>
+
+    <p-accordionTab header="By Of Operator">
+      <h5>Code : </h5>
+      <pre class="code"><code>{{ofCode}}</code></pre>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="byOfOperatorFromArray()">From Array</button>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="byOfOperatorMultipleArray()">From Multiple Array</button>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="byOfOperatorFromNumbers()">From Numbers</button>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="byOfOperatorFromString()">From Strings</button>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="byOfOperatorDifferentTypes()">From Different Types</button>
+      <item-list [items]="obsResponse" [listHeader]="ofListHeader"></item-list>
+    </p-accordionTab>
+
+    <p-accordionTab header="By From Operator">
+      <h5>Code : </h5>
+      <pre class="code"><code>{{fromCode}}</code></pre>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="byFromOperatorArray()">From Array</button>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="byFromOperatorString()">From Strings</button>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="byFromOperatorCollection()">From Collections</button>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="byFromOperatorPromise()">From Promise</button>
+      <item-list [items]="obsResponse" [listHeader]="fromListHeader"></item-list>
+    </p-accordionTab>
+
+    <p-accordionTab header="By FromEvent Method">
+          <from-event></from-event>
+    </p-accordionTab>
+
+  </p-accordion>
+
+</div>

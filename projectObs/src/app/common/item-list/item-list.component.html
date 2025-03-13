@@ -1,0 +1,9 @@
+<div class="list-container">
+  <h2>{{listHeader}}</h2>
+  <div *ngIf="items.length===0">No Data ... </div>
+  <ul>
+    <li *ngFor="let item of items; let i = index">
+      {{ item }}
+    </li>
+  </ul>
+</div>

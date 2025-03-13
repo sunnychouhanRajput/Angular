@@ -1,0 +1,45 @@
+<h1>Angular Unsubscribe from Observable Example</h1>
+<div>
+  Show Child One:
+  <input
+    type="checkbox"
+    id="showChildOne"
+    name="showChildOne"
+    [(ngModel)]="showChildOne"
+  />
+  <child-one  *ngIf="showChildOne"> </child-one>
+</div>
+
+<div>
+  Show Child Two:
+  <input
+    type="checkbox"
+    id="showChildTwo"
+    name="showChildTwo"
+    [(ngModel)]="showChildTwo"
+  />
+  <child-two  *ngIf="showChildTwo"> </child-two>
+</div>
+
+
+<div>
+  Show Child Three:
+  <input
+    type="checkbox"
+    id="showChildThree"
+    name="showChildThree"
+    [(ngModel)]="showChildThree"
+  />
+  <child-three  *ngIf="showChildThree"> </child-three>
+</div>
+
+<div>
+  Show Child Four:
+  <input
+    type="checkbox"
+    id="showChildFour"
+    name="showChildFour"
+    [(ngModel)]="showChildFour"
+  />
+  <child-four  *ngIf="showChildFour"> </child-four>
+</div>

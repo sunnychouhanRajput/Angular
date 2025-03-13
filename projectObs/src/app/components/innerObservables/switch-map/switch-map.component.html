@@ -1,0 +1,13 @@
+<h5>Syntax : </h5>
+<pre class="code"><code>{{mergeMapSyntax}}</code></pre>
+<button type="button" class="btn btn-primary mt-2 ml-3"  (click)="exampleOne()">Example One </button>
+<button type="button"  #btnOne class="btn btn-primary mt-2 ml-3">Click1</button>
+<button type="button"  #btnTwo class="btn btn-primary mt-2 ml-3">Click2</button>
+<button type="button" class="btn btn-primary mt-2 ml-3"  (click)="getDataByApi()">Without SwitchMap </button>
+<button type="button" class="btn btn-primary mt-2 ml-3"  (click)="getDataBySwitchMap()">With SwitchMap </button>
+<button type="button" class="btn btn-primary mt-2 ml-3"  (click)="reset()">reset </button>
+<div class="mt-3 ml-3">
+  <span> Search : </span>
+  <input type="text"  #name pInputText />
+</div>
+<item-list [items]="obsResponse" [listHeader]="switchMapListHeader"></item-list>

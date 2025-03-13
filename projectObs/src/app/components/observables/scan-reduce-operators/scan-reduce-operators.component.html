@@ -1,0 +1,7 @@
+<button type="button" class="btn btn-primary mt-2 ml-3"  (click)="scanOperatorEx1()">Scan Operator </button>
+<button  #btn type="button" class="btn btn-primary mt-2 ml-3"  >Scan Operator 2</button>
+<button type="button" class="btn btn-primary mt-2 ml-3"  (click)="reduceOperatorEx1()">Reduce Operator</button>
+<button type="button" class="btn btn-primary mt-2 ml-3" (click)="clickMe($event)" >Reduce Operator 2</button>
+<button type="button" class="btn btn-primary mt-2 ml-3"  (click)="stopCounting()">stopCounting</button>
+<button type="button" class="btn btn-primary mt-2 ml-3"  (click)="reset()">Reset</button>
+<item-list [items]="obsResponse" [listHeader]="listHeader"></item-list>

@@ -1,0 +1,26 @@
+<div>
+  <h3 class="mb-3">Pipe Method , Map, Filter, Tap Operators</h3>
+  <p-accordion >
+
+    <p-accordionTab header="Observable Pipe">
+      <h5>Syntax : </h5>
+      <pre class="code"><code>{{pipeSyntax}}</code></pre>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="pipeAsInstanceMethod()">Pipe As Instance Method</button>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="pipeAsStandAlone()">Pipe As Stand Alone</button>
+      <item-list [items]="obsResponse" [listHeader]="pipeListHeader"></item-list>
+    </p-accordionTab>
+
+    <p-accordionTab header="Map Operator">
+      <map-operator></map-operator>
+    </p-accordionTab>
+
+    <p-accordionTab header="Filter Operator">
+      <filter-operator></filter-operator>
+    </p-accordionTab>
+
+    <p-accordionTab header="Tap Operator">
+      <tap-operator></tap-operator>
+    </p-accordionTab>
+
+  </p-accordion>
+</div>

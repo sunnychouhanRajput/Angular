@@ -1,0 +1,7 @@
+<p-tree [value]="treeData" selectionMode="single" (onNodeSelect)="onNodeSelect($event)">
+  <ng-template let-node pTemplate="default">
+    <div [routerLink]="node.url" routerLinkActive="active-link" >
+      <span>{{ node.label }}</span>
+    </div>
+  </ng-template>
+</p-tree>

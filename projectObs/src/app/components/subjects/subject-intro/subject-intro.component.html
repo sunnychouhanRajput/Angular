@@ -1,0 +1,26 @@
+<div>
+  <h3 class="mb-3">Subject</h3>
+  <p-accordion >
+
+    <p-accordionTab header="Subject">
+      <h5>Syntax : </h5>
+      <pre class="code"><code>{{subjectSyntax}}</code></pre>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="exampleOne()">Example One</button>
+      <button type="button" class="btn btn-primary mt-2 ml-3"  (click)="exampleTwo()">Example Two</button>
+      <item-list [items]="obsResponse" [listHeader]="subjectListHeader"></item-list>
+    </p-accordionTab>
+
+    <p-accordionTab header="BehaviourSubject">
+      <behavior-subject></behavior-subject>
+    </p-accordionTab>
+
+    <p-accordionTab header="ReplaySubject">
+      <replay-subject></replay-subject>
+    </p-accordionTab>
+
+    <p-accordionTab header="AsyncSubject">
+      <async-subject></async-subject>
+    </p-accordionTab>
+
+  </p-accordion>
+</div>

@@ -1,0 +1,13 @@
+<table>
+  <tr>
+    <th>Item Available</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let item of itemList">
+    <td>{{item.name}}</td>
+    <td>
+      <button type="button" class="btn btn-primary  ml-3"  (click)="addToCart(item)">Add To Cart</button>
+      <button type="button" class="btn btn-success  ml-3"  (click)="addToWishList(item)">Add To Wish List</button>
+    </td>
+  </tr>
+</table>
